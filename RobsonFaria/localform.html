@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todos Com Robson</title>
+	<script type="text/javascript" src="html2canvas.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<link rel="prefetch" href="https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3">
+</head>
+<body>
+
+	<div class="dunno">
+		<div class="container" id="shoo">
+			<div class="body-container">
+				<div class="body-grey">
+					<div class="flex-column-body">
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>DEPUTADO FEDERAL</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DF11">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DF12">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DF13">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DF14">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>DEPUTADO ESTADUAL</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DE11">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DE12">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DE13">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DE14">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="DE15">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>SENADOR 1</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="SO11">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="SO12">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="SO13">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>SENADOR 2</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="ST11">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="ST12">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="ST13">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>GOVERNADOR</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="G11">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="G12">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>PRESIDENTE</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="P11">
+								</div>
+								<div class="entry-input">
+									<input type="text" maxlength="1" name="" id="P12">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="submit-btn">
+								<button onclick="print();">IMPRIMIR</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="capture" style="display: none;">
+			<div class="body-container">
+				<div class="body-grey">
+					<div class="flex-column-body">
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>DEPUTADO FEDERAL</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DFP11">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DFP12">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DFP13">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DFP14">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>DEPUTADO ESTADUAL</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DEP11">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DEP12">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DEP13">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DEP14">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="DEP15">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>SENADOR 1</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="SOP11">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="SOP12">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="SOP13">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>SENADOR 2</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="STP11">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="STP12">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="STP13">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>GOVERNADOR</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="GP11">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="GP12">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="entry-head">
+								<h1>PRESIDENTE</h1>
+							</div>
+							<div class="entry-body">
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="PP11">
+								</div>
+								<div class="entry-input-output">
+									<input type="text" maxlength="1" name="" disabled id="PP12">
+								</div>
+							</div>
+						</div>
+
+						<div class="entry-wrapper">
+							<div class="submit-btn">
+								<button>IMPRIMIR</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<script type="text/javascript">
+			
+			function print() {
+
+				var inputs = [
+					"DF11",
+					"DF12",
+					"DF13",
+					"DF14",
+					"DE11",
+					"DE12",
+					"DE13",
+					"DE14",
+					"DE15",
+					"SO11",
+					"SO12",
+					"SO13",
+					"ST11",
+					"ST12",
+					"ST13",
+					"G11",
+					"G12",
+					"P11",
+					"P12"
+				]
+
+				var outputs = [
+					"DFP11",
+					"DFP12",
+					"DFP13",
+					"DFP14",
+					"DEP11",
+					"DEP12",
+					"DEP13",
+					"DEP14",
+					"DEP15",
+					"SOP11",
+					"SOP12",
+					"SOP13",
+					"STP11",
+					"STP12",
+					"STP13",
+					"GP11",
+					"GP12",
+					"PP11",
+					"PP12"
+				]
+
+				document.getElementById("shoo").style.display = "none";
+				document.getElementById("capture").style.display = "block";
+
+				for(var i = 0; i <= 18; i++){
+					document.getElementById(inputs[i]).value;
+					console.log(document.getElementById(inputs[i]).value);
+
+					var num = document.getElementById(inputs[i]).value;
+					var id = outputs[i];
+
+					console.log(num + " IM THE VALUE");
+					console.log(id + " IM THE ID");
+
+					spriteIt(num, id);
+				}
+
+				function spriteIt(num, id) {
+
+					console.log(num + " IM THE VALUE IN SPRITE");
+					console.log(id + " IM THE ID IN SPRITE");
+
+					if(num == ""){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 53px";
+					}
+
+					if(num == "0"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 104px";
+						console.log("we are number 0");
+					}
+
+					if(num == "1"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 155px";
+						console.log("we are number 1");
+					}
+
+					if(num == "2"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 206px";
+						console.log("we are number 2");
+					}
+
+					if(num == "3"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 257px";
+					}
+
+					if(num == "4"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 308px";
+					}
+
+					if(num == "5"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 359px";
+					}
+
+					if(num == "6"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 410px";
+					}
+
+					if(num == "7"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 461px";
+					}
+
+					if(num == "8"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 512px";
+					}
+
+					if(num == "9"){
+						document.getElementById(id).style.background = "url('https://previews.dropbox.com/p/thumb/AAMTw3loPsSD801vuaktHcDvT0OTYx9qLy1-Ru9vWAP82wHPNQdP2B2Szhe4rtatuMsvEmaeBRfv6Oobw-55o2aYLJpq2GO58obwQhbZfawfG02JQdMkebC526lihDlhyTbhF2oHJ4TEe2ZAOZuCYaj0geM-a5YN7O1C0HXozPeCy6xQYWB8oWnThLIcCu1JggDEbybCnxLKF0VMuRXlLLGycQZdgXkNJsAzFzmrhP96Eg/p.png?size=2048x1536&size_mode=3') 1px 563px";
+					}
+
+				}
+
+				/*html2canvas(document.querySelector("#capture")).then(canvas => {
+		    		document.body.appendChild(canvas)
+				});*/
+
+				html2canvas(document.querySelector("#capture")).then(function(canvas) {
+				    // Export the canvas to its data URI representation
+				    var base64image = canvas.toDataURL("image/png");
+
+				    // Open the image in a new window
+				    //window.open(base64image , "_blank");
+				    debugBase64(base64image);
+				});
+
+				function debugBase64(base64URL){
+    				//var win = window.open();
+    				window.open().document.write('<iframe src="' + base64URL  + '" frameborder="0" style="border:0; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen></iframe>');
+				}
+
+			}
+		</script>
+	</div>
+		
+
+
+
+
+
+
+
+
+
+</body>
+</html>
