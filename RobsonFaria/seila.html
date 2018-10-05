@@ -3,56 +3,161 @@
 <head>
 	<title>Todos Com Robson</title>
 	<script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="seila.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link rel="prefetch" href="https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png">
 </head>
 <body>
 
-
-<script type="text/javascript">
-
-	var i = 1;
-
-	function next(){
-
+	<style type="text/css">
 		
+		*{
+    font-family: 'Roboto Slab', serif;
+}
 
-		console.log(i);
+img{
+    width: 100%;
+    height: 100%;
+}
 
-		var inputs = [
-					"DF11",
-					"DF12",
-					"DF13",
-					"DF14",
-					"DE11",
-					"DE12",
-					"DE13",
-					"DE14",
-					"DE15",
-					"SO11",
-					"SO12",
-					"SO13",
-					"ST11",
-					"ST12",
-					"ST13",
-					"G11",
-					"G12",
-					"P11",
-					"P12"
-				]
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+}
 
-		document.getElementById(inputs[i]).focus();
+ul, ol{
+    list-style: none;
+}
 
-		
-		i++;
-		console.log(i);
-		return i;
-	}
+button{
+    outline: none;
+}
+
+.container {
+    width: 773px;
+    min-width: 773px;
+    max-width: 773px;
+    height: 683px;
+    min-height: 683px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 45px;
+    border: 1px solid black;
+}
+
+.body-container{
+    width: 773px;
+    min-width: 773px;
+    max-width: 773px;
+    height: 683px;
+    min-height: 683px;
+    max-height: 683px;
+    margin: 0 auto;
+    border-radius: 45px;
+    border: 1px solid transparent;
+}
+
+.body-grey{
+    width: 100%;
+    max-height: 683px;
+    height: 683px;
+    /*padding: 30px 0;*/
+}
+
+.flex-column-body{
+    display: flex;
+    flex-direction: column;
+    width: 587px;
+    max-width: 587px;
+    min-width: 587px;
+    height: 564px;
+    max-height: 564px;
+    padding-top: 63px;
+    margin: 0 auto;
+    /*justify-content: space-between;*/
+}
+
+.entry-wrapper{
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    align-items: center;
+    width: 100%;
+}
+
+.entry-head{
+    font-size: 18px;
+    color: #ACACAC;
+    max-width: 162px;
+    width: 162px;
+}
+
+.entry-body{
+    display: inline-flex;
+    justify-content: flex-start;;
+    width: 100%;
+    margin-top: 7px;
+}
+
+.entry-input{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-btn>button{
+    width: 223px;
+    max-width: 223px;
+    min-width: 223px;
+    height: 46px;
+    max-height: 46px;
+    min-height: 46px;
+    font-size: 26px;
+    background-color: #055820;
+    color: white;
+    border-radius: 15px;
+}
+
+input{
+    height: 73px;
+    width: 73px;
+    min-height: 73px;
+    min-width: 73px;
+    text-indent: 50%;
+    border: 1px solid black;
+    border-radius: 11px;
+}
 
 
 
-</script>
+.entry-input-output{
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    
+}
+
+.entry-input-output>input{
+    background-size: cover !important;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    border-radius: 45px;
+}
+
+
+	</style>
 
 	<div class="dunno">
 		<div class="container" id="shoo">
@@ -65,16 +170,16 @@
 							</div>
 							<div class="entry-body">
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DF11" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DF11">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DF12" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DF12">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DF13" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DF13">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DF14" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DF14">
 								</div>
 							</div>
 						</div>
@@ -85,19 +190,19 @@
 							</div>
 							<div class="entry-body">
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DE11" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DE11">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DE12" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DE12">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DE13" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DE13">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DE14" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DE14">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="DE15" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="DE15">
 								</div>
 							</div>
 						</div>
@@ -108,13 +213,13 @@
 							</div>
 							<div class="entry-body">
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="SO11" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="SO11">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="SO12" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="SO12">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="SO13" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="SO13">
 								</div>
 							</div>
 						</div>
@@ -125,13 +230,13 @@
 							</div>
 							<div class="entry-body">
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="ST11" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="ST11">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="ST12" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="ST12">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="ST13" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="ST13">
 								</div>
 							</div>
 						</div>
@@ -142,10 +247,10 @@
 							</div>
 							<div class="entry-body">
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="G11" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="G11">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="G12" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="G12">
 								</div>
 							</div>
 						</div>
@@ -156,10 +261,10 @@
 							</div>
 							<div class="entry-body">
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="P11" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="P11">
 								</div>
 								<div class="entry-input">
-									<input type="text" maxlength="1" name="" id="P12" onkeyup="next();">
+									<input type="text" maxlength="1" name="" id="P12">
 								</div>
 							</div>
 						</div>
@@ -295,8 +400,6 @@
 			</div>
 		</div>
 
-
-
 		<script type="text/javascript">
 			
 			function print() {
@@ -368,50 +471,50 @@
 					console.log(id + " IM THE ID IN SPRITE");
 
 					if(num == ""){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 53px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 74px";
 					}
 
 					if(num == "0"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 104px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 145px";
 						console.log("we are number 0");
 					}
 
 					if(num == "1"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 155px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 217px";
 						console.log("we are number 1");
 					}
 
 					if(num == "2"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 206px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 289px";
 						console.log("we are number 2");
 					}
 
 					if(num == "3"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 257px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 360px";
 					}
 
 					if(num == "4"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 308px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 439px";
 					}
 
 					if(num == "5"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 359px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 503px";
 					}
 
 					if(num == "6"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 410px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 575px";
 					}
 
 					if(num == "7"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 461px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 647px";
 					}
 
 					if(num == "8"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 512px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 718px";
 					}
 
 					if(num == "9"){
-						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 1px 563px";
+						document.getElementById(id).style.background = "url('https://d3vc2n5vg3qtba.cloudfront.net/uploads/2018/10/sprite-numeros.png') 0px 790px";
 					}
 
 				}
